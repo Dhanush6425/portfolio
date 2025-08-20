@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates|Portfolio</title>
+    <link rel="icon" href="icon1.png">
+</head>
+<body>
+     <header style="text-align: right;">
+<nav style="text-align: right;">
+  <a href="index.html" style="background: gray; color: white; padding: 5px 10px; text-decoration: none;">
+    Home
+  </a>
+</nav>
+
+    </header>
+    <section>
+        <center>
+        <h1>📜Certificates</h1>
+        <div class="sp"></div>
+        <ul>
+            <li>
+            <h3 class="toggle-btn" ><b>Industry Certification</b></h3>
+            <ol class="project-content">
+                <li><a href="Certificate/AZ 900.pdf">AZ 900</a></li>
+                <li><a href="Certificate/Oracle Cloud.pdf">Oracle Cloud Infrastructure</a></li>
+            </ol>
+            </li>
+            <li>
+            <h3 class="toggle-btn"><b>Nptel Certification</b></h3>
+            <ol class="project-content">
+                <li><a href="Certificate/Problem Solving Through Programming in C(NPTEL).pdf">Problem Solving Through Programming in C</a></li>
+                <li><a href="Certificate/Introduction To Internet Of Things.pdf">Introduction To Internet Of Things</a></li>
+                <li><a href="">Enhancing Soft Skills and Personality</a></li>
+            </ol>
+            </li>
+            <li>
+            <h3 class="toggle-btn"><b>Internship</b></h3>
+            <ol class="project-content">
+                <li><a href="">Lennox </a></li>
+                <li><a href="Certificate/Intern Vreendar.pdf">Vreendaar IT Solutions</a></li>
+            </ol>
+            </li>
+            <li>
+            <h3 class="toggle-btn"><b>Others</b></h3>
+            <ol class="project-content">
+                <li><a href="Certificate/Java 11.pdf">Java </a></li>
+                <li><a href="Certificate/Thanigaivelavan cybergeeks.pdf">CyberGeeks (C and Java)</a></li>
+            </li>
+
+        </ul>
+
+        </center>
+    </section>
+      <script>
+        const toggleBtns = document.querySelectorAll(".toggle-btn");
+
+        toggleBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const content = btn.nextElementSibling; // the <ol> right after <h3>
+                content.classList.toggle("show");
+            });
+        });
+    </script>
+</body>
+<style>
+     body {
+  margin: 0;
+  background-color: black;  /* black background */
+  color: white;             /* white text */
+  line-height: 1.8;
+}
+    h1{
+        margin-top: 5%;
+        font-size: 4rem;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    h3{
+        font-size: 2rem;
+    }
+    a:hover{
+        color: aqua;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+   h3:hover{
+        color: aqua;
+        cursor: pointer;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+
+    ul,li,a{
+        color: white;
+        text-decoration: none;
+        list-style: none;
+    }
+    .sp{
+        margin-top: 5%;
+    }
+    .project-content {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    /* Show content when toggle is clicked */
+    .project-content.show {
+      display: block;
+    }
+    a,nav{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  margin-right: 3%;
+    }
+
+</style>
+</html>

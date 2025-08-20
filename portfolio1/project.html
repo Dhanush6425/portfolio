@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project|Portfolio</title>
+    <link rel="icon" href="/portfolio1/images/icon1.png">
+</head>
+<body>
+   <header style="text-align: right;">
+<nav style="text-align: right;">
+  <a href="index.html" style="background: gray; color: white; padding: 5px 10px; text-decoration: none;">
+    Home
+  </a>
+</nav>
+
+    </header>
+    <section class="one">
+        <h1>💻Projects</h1>
+        <br>
+        <h3 class="toggle-btn">THREE-TIER WEB APP DEPLOYMENT ON AWS</h3>
+        <div class="project-content">
+        <P> Designed and deployed a 3-tier architecture
+ using AWS services</P>
+        <h4><strong> Project Overview</strong></h4>
+        <p></p>
+This project demonstrates how to design and deploy a three-tier web application architecture on Amazon Web Services (AWS).<br></h5>
+<p class="ow">
+<space></space>The application is divided into three layers for better scalability, security, and manageability:</p>
+<ul style="list-style: none;">
+<strong>
+
+<li>Presentation Tier (Web Layer) </strong>– User interface where end users access the website.</li>
+<li><strong><br>
+Application Tier (App Layer)</strong> – Handles business logic and processes requests.</li>
+<li><strong><br>
+Database Tier (DB Layer) </strong>– Stores application data securely.</li>
+</ul>
+<h4>Architecture Diagram</h4>
+<img src="/portfolio1/images/CloudyCrafty ap-south-1.png" width="40%">
+<p>Click here to view the project : <a href="https://awsatify.com/" target="_blank" class="project-link">awsatify</a></p>
+
+
+</div>
+<h3 class="toggle-btn">WEB-BASED PERSONAL PORTFOLIO</h3>
+<div class="project-content">
+       <P> A responsive and interactive portfolio website designed to showcase my projects, skills, certifications, and contact information in a professional format.</P>
+        <h4><strong> Project Overview</strong></h4>
+        <p></p>
+Designed and developed a responsive and interactive personal portfolio website to showcase my projects, skills, and contact information in a professional and organized format. This project highlights my ability to create modern, user-friendly websites with clean layouts and smooth navigation.<br></h5>
+
+<ul style="list-style: none;">
+<strong>
+
+<li>🖱️ Interactive Navigation </strong>– Smooth scrolling and clickable sections for easy access..</li>
+<li><strong><br>
+💼 Projects Section</strong> – Handles business logic and processes requests.</li>
+<li><strong><br>
+📜 Certificates & Academics</strong>– Space to showcase certifications and academic milestones.</li>
+<li><strong><br>
+  🧑 About Me Section</strong>– Introduction, career interests, and language proficiency</li>
+
+</ul>
+
+</div>
+    </section>
+</body>
+<script>
+    // JavaScript to toggle content visibility
+    const toggleBtns = document.querySelectorAll(".toggle-btn");
+
+    toggleBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling; // Get its corresponding content
+        content.classList.toggle("show");
+      });
+    });
+  </script>
+<style>
+    body {
+  margin: 0;
+  background-color: black;  /* black background */
+  color: white;             /* white text */
+  line-height: 1.8;
+}
+
+.one {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.one h1 {
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;   /* highlight heading */
+}
+
+.one h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: white;
+}
+.one h3:hover{
+    cursor: pointer;
+    color: aqua;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+.one p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.one .ow {
+  text-indent: 40px; /* indent start of paragraph */
+}
+
+.one ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.one ul li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.one h4 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #ffcc00;
+}
+
+.one img {
+  margin-top: 20px;
+  border: 2px solid cyan;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.3);
+}
+.project-content {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    /* Show content when toggle is clicked */
+    .project-content.show {
+      display: block;
+    }
+
+  a,nav{
+    margin-right: 3%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+  }
+  a:hover{
+    color: cyan;
+  }
+
+</style>
+</html>

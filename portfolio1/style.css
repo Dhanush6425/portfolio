@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+    width: 100%;              /* full width */
+    color: white;
+    text-align: center;       /* center the text */
+    padding: 20px 0;          /* space above & below */
+}
+
+h1 {
+    
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.two {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.two ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.two  li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+}
+ul{
+    list-style-type: none;
+}
+
+.two li a:hover {
+    color: cyan;
+    cursor: pointer;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+#footer-cotent{
+    margin-bottom: 10%;
+}
+#footer-content,p{
+    font-size: 1rem;
+    text-align: bottom;
+}
+#footer-content,a{
+    color: white;
+}
+#footer-content,a:hover{
+    color: cyan;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
