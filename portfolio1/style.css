@@ -67,11 +67,13 @@ ul{
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 footer {
-  background: #111;
-  color: white;
+  background-color: #111;   /* dark background */
+  color: white;             /* white text */
   text-align: center;
-  padding: 15px 10px;
-  position: relative;
-  bottom: 0;
+  padding: 15px 0;
+  font-size: 1rem;
   width: 100%;
+  position: fixed;       /* stays after content */
+  bottom: 0;
 }
+
